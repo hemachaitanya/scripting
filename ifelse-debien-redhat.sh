@@ -33,6 +33,16 @@ fi
 # create one instance
 # install aws cli and configure aws
 
+### git clone repo
+# cd repo
+# vi <file>
+# chmod +(execute permisssions) to the file
+#  ./file
+
+# git add .
+# git commit -m "<message>"
+# git push
+# http link select and click (alt+ctrl)
 
 
 
