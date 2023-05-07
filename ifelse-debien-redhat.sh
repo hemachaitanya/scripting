@@ -1,20 +1,20 @@
 #!/bin/bash
-distribution= $( . /etc/os-release && echo $ID)
+distribution=$( . /etc/os-release && echo $ID)
 echo $distribution
-if [[$distribution == "ubuntu"]]
+if [[ $distribution == "ubuntu" ]]
 then
-    apt update 
-    apt install openjdk-17-jdk -y
+    sudo apt update 
+    sudo apt install openjdk-17-jdk -y
     curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
     /usr/share/keyrings/jenkins-keyring.asc > /dev/null
     echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
     https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
     /etc/apt/sources.list.d/jenkins.list > /dev/null
-    apt-get update
-    apt-get install jenkins -y
-elif [[ $distribution == "rhel"]]
+    sudo apt-get update
+    sudo apt-get install jenkins -y
+elif [[ $distribution == "rhel" ]]
 then
-     sudo yum install wget -y
+    sudo yum install wget -y
     sudo wget -O /etc/yum.repos.d/jenkins.repo \
         https://pkg.jenkins.io/redhat-stable/jenkins.repo
     sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
@@ -24,7 +24,7 @@ then
     sudo yum install jenkins -y
     sudo systemctl daemon-reload
 else
-    echo "this script runs only on ununtu and redhat instances"
+    echo "this script runs only on ubuntu and redhat instances"
 fi
 
 
