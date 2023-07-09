@@ -1,3 +1,4 @@
+### print odd numer s {1 to 100}
 for i in {1..100}
 do
   num=$i%2;
@@ -6,7 +7,7 @@ do
     echo $i
     fi
 done
-
+##  print even numbers {1 to 100}
 for i in {1..100}
 do 
 num=$i%2;

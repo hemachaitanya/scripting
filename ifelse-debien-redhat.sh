@@ -1,6 +1,6 @@
 #!/bin/bash
 distribution=$( . /etc/os-release && echo $ID)
-echo $distribution
+echo "$distribution"
 if [[ $distribution == "ubuntu" ]]
 then
     sudo apt update 
@@ -12,7 +12,7 @@ then
     /etc/apt/sources.list.d/jenkins.list > /dev/null
     sudo apt-get update
     sudo apt-get install jenkins -y
-elif [[ $distribution == "rhel" ]]
+elif [[ "$distribution" == "rhel" ]]
 then
     sudo yum install wget -y
     sudo wget -O /etc/yum.repos.d/jenkins.repo \
