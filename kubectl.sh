@@ -1,11 +1,15 @@
 #!/bin/bash
+sudo -i
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 usermod -aG docker ubuntu
-wget https://storage.googleapis.com/golang/getgo/installer_linux
+### install go language updated version
+
+wget https://storage.googleapis.com/golang/getgo/installer_linux 
 chmod +x ./installer_linux
 ./installer_linux
 source ~/.bash_profile
+### 
 git clone https://github.com/Mirantis/cri-dockerd.git
 cd cri-dockerd
 mkdir bin
@@ -35,7 +39,9 @@ sudo apt-mark hold kubelet kubeadm kubectl
 # kubectl apply -f https://github.com/coreos/flannel/raw/master/Documentation/kube-flannel.yml
 
 
-
+### incase node cannot connectes to 
+##kubectl get nodes
+## then we install flannael 
 
 #node ## 
 
