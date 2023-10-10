@@ -1,0 +1,133 @@
+---
+- name: ansible
+  become: yes 
+  hosts: all
+  tasks:
+    - name: apache2
+      ansible.buildin.apt:
+        - name: apache2
+          state: present
+          update_cache: true
+### modules
+yum 
+copy
+import
+include
+get_url
+systemd
+shell
+wget
+link
+
+
+
+````Jenkinsfile
+pipeline{
+  agent {label: 'RRR'}
+  stages{
+    stage('git'){
+      steps{
+        sh 'echo 'hai i am hemalatha''
+      }
+      }
+  }
+}
+``
+
+from
+label or management
+copy
+add
+entrypoint
+cmd
+workdir
+arg
+env
+docker file is the collection of instructions to install the application
+docker image use the docker file we build image
+use docker image to create docker container with isolated areas
+volumes   "dest"
+bind mount "source and dest"
+ep
+---
+version: 3.8
+services:
+  gol:
+    build: 
+      context: . 
+      dockerfile: Dockerfile
+    container_name: nop 
+    ports: 
+      - 8080:9090
+    network:
+      - golnet
+    volumes:
+      - ""
+---
+pool: 
+  vmImage: ubuntu
+  name: Default
+trigger:
+  - main 
+stages:
+  - stage: A
+    jobs:
+      - job: B!
+        steps:
+        - task: Maven@3
+          inputs:
+            mavenPOMFile: 'pom.xml'
+            goals: 'package'
+            publishJUnitResults: true
+            testResultsFiles: '**/surefire-reports/TEST-*.xml'
+            javaHomeOption: 'JDKVersion'
+            jdkVersionOption: '1.17'
+
+---
+pool:
+  name:
+  vmImage:
+trigger:
+ - main
+steps:
+- task: Maven@4
+  inputs:
+    goals:
+    publishedtestresult:
+    testResultsFiles:
+    javaHomeOption:
+    jdkVersionOption:
+---
+pool:
+  name:
+  vaImage:
+trigger:
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    publishedWebProjects: true
+- task: CopyFiles@2
+  inputs:
+    contents: '*/target/*.dll'
+    TargetFolder: '$(Build.SourceDirectory)'
+- task: CopyPublishBuildArtifacts@1
+  inputs:
+    ArtifactName:
+
+
+
+
+ * Identification  of  root  causes  on  critical  problems  throughout  the  platform,  incident reports and the organization of the engineering team members in steps to resolve issues
+
+  
+ 
+            
+            
+
+   
+    
+        
+
+
+  
