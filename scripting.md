@@ -116,10 +116,18 @@ We pass parameter to a function for providing more information regrading the fun
 
 ##### Eg:-
 
-userdefined function      predefined function
-public void start(int a)  start(3);//The fan is running in mode 3
+### userdefined function  
+    
+public void start(int a) 
+ 
 {
   //start the fan
+}
+
+### predefined function
+
+{
+    start(3);//The fan is running in mode 3
 }
 
 --------------------------------------------------------------------------------------
@@ -195,19 +203,21 @@ Modules : -  10 Modules
 */
 ------------------------------------------------------------------
 Note :- 
+
 1) In java whenever we write a program we need at least a main method which takes String array as an argument.
 
 2) In java the execution of the program always starts and ends with main method.
 
 Write a program in Java to display Welcome message 
 --------------------------------------------------
-public class Welcome 
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("Welcome to Java language !!!");
-	}
-}
+
+        public class Welcome 
+        {
+            public static void main(String[] args) 
+            {
+                System.out.println("Welcome to Java language !!!");
+            }
+        }
 -----------------------------------------------------------------
 Description of main() method :
 -----------------------------------
