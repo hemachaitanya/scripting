@@ -1504,6 +1504,7 @@ boolean nextBoolean() :- Used to read boolean value.
 char next().charAt(0) :- Used to read a character
 --------------------------------------------------------------
 //WAP to read your name from the keyboard
+```
 import java.util.*;
 public class Test2
 {
@@ -1561,6 +1562,7 @@ class Test3
 		System.out.println(num);
 	}
 }
+```
 
 --------------------------------------------------------------
 12-Sep-23
@@ -1576,6 +1578,7 @@ The operator which works upon single operand is called Unary Operator. Here in j
 3) Decrement Operator (--)
 ---------------------------------------------------------------
 //*Unary Operators (Acts on only one operand)
+```
 //Unary minus Operator
 class Test4 
 {
@@ -1760,6 +1763,7 @@ public void input()
 {
     int y = 12;
 }
+```
 
 Here in the above example y is local variable.
 
@@ -1771,6 +1775,7 @@ We can't use any access modifier on local variable except final.
 
 Program
 ---------
+```
 public class Test17
 {		 
 	public static void main(String [] args)
@@ -1782,11 +1787,13 @@ public class Test17
         System.out.println(y);
 	}	
 }
+```
 
 Note :- In the above program we will get compilation error
 -----------------------------------------------------------------------
 //Program that shows local variable we cannot use outside of the method
 (Diagram 12-SEP)
+```
 class StackMemory
 {
 	public static void main(String[] args) 
@@ -1807,10 +1814,12 @@ class StackMemory
 		System.out.println("I am m2 method!!!"+x);
 	}	
 }
+```
 Note :- In the above program we have declared x variable inside m2 method and we want to use x variable inside m1 method which is not
 possible becoz x is a local variable.
 --------------------------------------------------------------
 //*Program on Assignment Operator
+```
 class Test18
 {
 	public static void main(String args[])
@@ -1843,6 +1852,7 @@ class IQ
 	}
 
 }
+```
 -----------------------------------------------------------------------
 What is BLC class in java ?
 ---------------------------
@@ -1872,6 +1882,7 @@ These operators are used to compare the values. The return type is boolean. We h
 6) != (Not equal to )
 
 //*Program on relational operator(6 Operators)
+```
 class Test19  
 {
 	public static void main(String args[])
@@ -1949,11 +1960,15 @@ public static void main(String args[])
          System.out.println("The bill is :"+bill);
 	}
 }
+```
 --------------------------------------------------------------
 Nested if:
 ---------
 If an 'if condition' is placed inside another if condition then it is called Nested if.
 In nested if condition, we have one outer if and one inner if condition, the inner if condition will only execute when outer if condition returns true.
+
+
+```
 
 if(condition)  //Outer if condition
 {
@@ -1997,6 +2012,7 @@ public static void main(String args[])
 	System.out.println("The big number is :"+big);
 	}
 }
+```
 
 Note :- In the above program to find out the biggest number among three number we need to take the help of nested if condition but the code becomes complex, to reduce the length of the code Logical Operator came into the picture.
 --------------------------------------------------------------
@@ -2022,13 +2038,16 @@ In Java we have 3 logical Operators
 !      :- It is an inverter, it makes true as a false and false as a true.
 
 Note :- The && and || operator only works with boolean operand so the following code will not compile.
+```
 
 if(5 && 6)
 {
 
 }
+```
 ---------------------------------------------------------------
 //*Program on Logical Operator (AND, OR, Not Operator)
+```
 //Biggest number among 3 numbers
 
 class Test23
@@ -2076,6 +2095,7 @@ class Test25
 		System.out.println(!true);
 	}
 }
+```
 --------------------------------------------------------------
 Boolean Operators :
 -----------------------
@@ -2087,6 +2107,7 @@ It is also known as non short circuit. There are two non short circuit logical o
 
 |    boolean OR operator    (At least one condition must be true but if the first condition is true still it will check all right side expression )
 --------------------------------------------------------------
+```
 //* Boolean Operators
 /*
 & boolean AND operator 
@@ -2129,6 +2150,7 @@ class Test27
 		System.out.println(z);
 	}
 }
+```
 
 ---------------------------------------------------------------
 Bitwise Operator :-
@@ -2140,6 +2162,8 @@ In order to work with binary bits java software people has provided Bitwise oper
 |  (Bitwise OR) :- Returns false if both the inputs are false
  
 ^ (Bitwise X-OR) :- Returns true if both the arguments are opposite to each other.
+
+```
 
 //Bitwise Operator
 class Test28 
@@ -2167,6 +2191,7 @@ public class Test29
 		
     }
 }
+```
 ---------------------------------------------------------------
 14-Sep-23
 ---------
@@ -2175,6 +2200,7 @@ Ternary Operator OR Conditional Operator :
 The ternary operator (? :) consists of three operands. It is used to evaluate boolean expressions. The operator decides which value will be assigned to the variable.It is used to reduced the size of if-else condition. 
 
 //Ternary Operator OR Conditional Operator
+```
 public class Test30
 {
     public static void main(String args[]) 
@@ -2199,6 +2225,7 @@ class Test
 		 System.out.println(true ? a : 65);
 	}
 }
+```
 
 ---------------------------------------------------------------
 Member access Operator Or Dot Operator :
@@ -2208,6 +2235,7 @@ It is used to access the member of the class so whenever we want to invoke the m
 We can directly call any static method and static variable from the main method with the help of class name , here object is not required as shown in the program below.
 
 If static variable or static method is present in the same class where main method is available then we can directly call but if the static variable and static method is available in another class then to call those static members of the class, class name is required.
+```
 
 class Welcome
 {
@@ -2240,12 +2268,15 @@ public class Test
 
 	static int y = 200;
 }
+```
 --------------------------------------------------------------
 //* new Operator
 
 This Operator is used to create Object. If the member of the class (field + method) is static, object is not required. we can directly call with the help of class name.
 
 On the other hand if the member of the class (variables + method) is not declared as static then it is called non-static member Or instance member , to call the non-static member object is required.
+
+```
 
 class Welcome
 {
@@ -2264,9 +2295,8 @@ public class Test
 		System.out.println(w.x);
 		w.access();
 	}
-
-	
 }
+```
 -------------------------------------------------------------
 instanceof operator :-
 
@@ -2279,7 +2309,7 @@ instanceof operator :-
 4) In between the object reference and class name , we must have some kind of relation (assignment relation) otherwise we will get compilation error.
 
 //* instanceof operator 
-
+```
 public class Test 
 {	
 	public static void main(String[] args) 
@@ -2307,6 +2337,7 @@ public class Test
 
 	}	
 }
+```
 --------------------------------------------------------------
 Types of variables in java 
 ---------------------------
@@ -2337,6 +2368,7 @@ Types of variables in java
 Example :
 ---------
 //Primitive Example
+```
 
 public class Test 
 {	
@@ -2393,6 +2425,7 @@ public class Test
        st.show();
 	}	
 }
+```
 ----------------------------------------------------------------
 What is Method Signature ?
 
@@ -2415,6 +2448,7 @@ In this approch we need not to check each and every case, if the appropriate cas
 
 break keyword is optional here but we can use as per requirement. It will move the control outside of the body of the switch.
 ----------------------------------------------------------------
+```
 import java.util.*;
 public class SwitchDemo 
 {
@@ -2512,6 +2546,7 @@ public class Test2
 		} 
 	}
 }
+```
 -----------------------------------------------------------------------
 Note :- In the switch statement we can't pass long, float and double value. Strings are allowed from JDK 1.7 version. enums are allowed from java 5 version.
 ----------------------------------------------------------------------
@@ -2529,14 +2564,17 @@ In java we have 4 kinds of loop
 do-while loop :-
 ------------------
 It will repeat the statment but in this loop first of all statement will be printed and then only the condition will verify so it is also called exit control loop.
+```
 
 do
 {
    statement;
 }
 while();
+```
 ----------------------------------------------------------------------
 //program on do-while loop
+```
 public class Test3
 {	
 	public static void main(String [] args)
@@ -2566,6 +2604,7 @@ public class  Test4
 		while (x<=10);
 	}	
 }
+```
 -----------------------------------------------------------------------
 here basic drawback with do-while loop is, first of all it will print the value and then only it will check the condition.
 
@@ -2575,12 +2614,16 @@ while loop :-
 -------------
 In while loop first of all we will verify the condition, if the condition is true then only the control will enter inside the body of the loop hence it is known as entry control loop.
 
+```
+
 while(condition)
 {
    statement;
 }
+```
 ----------------------------------------------------------------------
 //program on while loop
+```
 public class Test5 
 {
 	public static void main(String[] args) 
@@ -2678,6 +2721,7 @@ public class Test10
 	}
 
 }
+```
 Note :
 -------
 1) In the above program each value of x is assigning to y variable.
@@ -2687,6 +2731,7 @@ Note :
 3) in java.util package there is a predefined class called Arrays which contains a static method sort(), by using this static method we can sort an array in ascending order. sort() method takes Object array as a parameter.
 ---------------------------------------------------------------
 -----------------------------------------------------------------------
+```
 public class StringDemo 
 {
 	public static void main(String[] args) 
@@ -2748,6 +2793,7 @@ class Test13
 		}
 	}
 }
+```
 ----------------------------------------------------------------------
 Working with static Method and return type :
 ----------------------------------------
@@ -2764,6 +2810,7 @@ This program contains 2 files :
 Circle.java(BLC)
 ----------------
 package com.ravi.method_return;
+```
 
 //BLC
 public class Circle 
@@ -2809,7 +2856,7 @@ public class AreaOfCircle
 
 	}
 }
-
+```
 Note :- java.text package has provided a predefined class called
         DecimalFormat, by using this class we can provide the format for decimal values ("00.00")
 
@@ -2822,6 +2869,8 @@ WAP in java to get the student details in String format.
 2 files
 
 Student.java
+
+```
 ------------
 package com.ravi.pack8;
 
@@ -2894,6 +2943,7 @@ public class Test
 	}
 
 }
+```
 ---------------------------------------------------------------------
 16-Sep-23
 ----------
@@ -2970,6 +3020,7 @@ An object has 3 characteristics :
 ----------------------------------------------------------------------
 First Object Oriented Program on Laptop 
 ---------------------------------------
+```
 package com.nit.oop;
 
 public class Laptop 
@@ -3019,10 +3070,12 @@ public class Laptop
 	}
 
 }
+```
 ----------------------------------------------------------------------
 Default constructor added by the compiler
 --------------------------------------------------
 In java whenever we write a class and If user does not write any type of constructor then automatically compiler will add default constructor to the class.
+```
 
 class Test
 {
@@ -3037,6 +3090,7 @@ class Test
     {
     }
 }
+```
 -------------------------------------------------------------------------
 ----------------------------------------------------------------
 Why compiler adds default constructor to our class :
@@ -3058,7 +3112,8 @@ boolean - false
 String - null
 Object - null
 ------------------------------------------------------------------------
-//WAP in java to show that default constructor is used to initialize the instance variable.     
+//WAP in java to show that default constructor is used to initialize the instance variable.
+```     
 
 public class Student
 {
@@ -3076,6 +3131,7 @@ public class Student
             ram.talk();
   }
 }
+```
 ----------------------------------------------------------------------
 How to provide our userdefined values for the instance variable :
 -----------------------------------------------------------------
@@ -3085,6 +3141,7 @@ The following program explains how to re-initialize our object property (instanc
 
 Product.java
 -------------
+```
 package com.nit.oop;
 
 public class Product
@@ -3112,6 +3169,7 @@ public class Product
 	        camera.displayProductData();
   } 
 }
+```
 ---------------------------------------------------------------------
 How to write BLC(Business Logic class ) and ELC (Executable Logic class)
 ---------------------------------------------------------------
@@ -3123,6 +3181,7 @@ This package contains 3 files [All these classes are in the same package]
 ---------------------------------------------------------------------
 Player.java
 ------------
+```
 package com.ravi.blc_elc;
 
 //BLC
@@ -3201,6 +3260,7 @@ public class Dhoni {
 	}
 
 }
+```
 
 ----------------------------------------------------------------------
 instance variable :
@@ -3241,6 +3301,7 @@ It is also known as variable shadowing.
 ---------
 Customer.java
 -------------
+```
 package com.ravi.this_keyword;
 //BLC
 public class Customer 
@@ -3279,10 +3340,12 @@ public class CustomerDemo {
 	}
 
 }
+```
 -----------------------------------------------------------------------
 Role of instance variable while creating the Object :
 -----------------------------------------------------
 Whenever we create an object in java, a separate copy of all the instance variables will be created with each and every object as shown in the program below.
+```
 
 package com.ravi.this_keyword;
 
@@ -3302,10 +3365,12 @@ public class Test
 	}
 
 }
+```
 -----------------------------------------------------------------------
 Working with static variable :
 ----------------------------------
 In static variable only one copy will be created and this single copy will be sharable by all the objects as shown in the program below.
+```
 
 package com.ravi.this_keyword;
 
@@ -3325,6 +3390,7 @@ public class Demo
 	}
 
 }
+```
 
 Note :
 
@@ -3347,6 +3413,7 @@ Note :- static variable will save the memory so the overall execution of the pro
 ---------
 Student.java
 ------------
+```
 package com.ravi.instance_static;
 //BLC
 public class Student 
@@ -3403,6 +3470,7 @@ public class StudentDemo
 		sc.close();
 	}
 }
+```
 ------------------------------------------------------------------------
 How to print object properties value (instance variable value) :
 ----------------------------------------------------------------------
@@ -3416,6 +3484,7 @@ In order to call toString() method we need to print the object reference(name of
 
 Manager.java
 ------------
+```
 package com.ravi.to_string;
 //BLC
 public class Manager 
@@ -3455,6 +3524,7 @@ public class ManagerDemo
 	}
 
 }
+```
 -----------------------------------------------------------------------
 How to generate toString() method :
 -----------------------------------
@@ -3467,6 +3537,7 @@ Lab Program :
 --------
 Manager.java
 -------------
+```
 package com.ravi.lab_prog;
 
 public class Manager
@@ -3523,6 +3594,7 @@ public class ManagerDemo {
 
 	}
 }
+```
 ------------------------------------------------------------------------23-Sep-23
 ---------
 Data hiding :
@@ -3539,6 +3611,7 @@ Note :- Data members must be declared as private where as member functions (Meth
 ---------
 Customer.java
 --------------
+```
 package com.ravi.data_hiding;
 
 public class Customer 
@@ -3579,6 +3652,7 @@ public class BankingApplication
 		raj.withdraw(1000);
 	}
 }
+```
 -----------------------------------------------------------------------
 Abstraction (Hiding the complxcity):
 ------------------------------------
@@ -3592,6 +3666,7 @@ So being a developer we should always hide the data from the user(by declaring t
 
 Example :
 -----------
+```
 class Fan
 {
    private int coil;
@@ -3605,6 +3680,7 @@ class Fan
    {
    }
 }
+```
 
 Note :- Here User will interact with the functionality of the fan i.e switchOn and switchOff but will not interact with data(coil, wings) directly.
 
@@ -3638,6 +3714,7 @@ On the other hand if some variables are declared with private access modifier an
 ---------
 Student.java
 -------------
+```
 package com.ravi.encapsulation;
 
 public class Student 
@@ -3672,6 +3749,7 @@ public class StudentDemo {
 	}
 
 }
+```
 ------------------------------------------------------------------------
 25-Sep-23
 ---------
@@ -3722,6 +3800,7 @@ In java we have 3 types of constructors :
      [Diagram is available 26-SEp-23]
 
      Ex:-
+     ```
      public class Test
      {
          int x, y;
@@ -3732,12 +3811,14 @@ In java we have 3 types of constructors :
 	    y = 200;
 	 }
      }
+     ```
 -----------------------------------------------------------------------
 2 files :
 ---------
 
 Person.java
 ------------
+```
 
 package com.ravi.no_arg_cons;
 
@@ -3782,6 +3863,7 @@ public class NoArgumentConstructor
 	}
 
 }
+```
 
 Note :- In the above program we are creating two different objects but 
         they are containing same data.
@@ -3799,7 +3881,7 @@ Note :- In the above program we are creating two different objects but
 If one or more argument is passed to the constructor then it is called parameterized constructor.
 
 If we want to initialize our objects with different values(unlike no argument constructor) then we should choose parameterized constructor.
-
+```
 public class Test
 {
      private int x,y;
@@ -3930,6 +4012,7 @@ There are 5 ways to initialize our object properties (instance variables)
 		   this.y = y;
 	    }
 	  }
+```
 
            All the objects will initialize with different values
 
@@ -3964,6 +4047,7 @@ Program on HAS-A relation :
 ---------
 College.java(BLC)
 -----------------
+```
 package com.ravi.has_a_reln;
 
 public class College 
@@ -4126,6 +4210,7 @@ public class Zomato {
         System.out.println(c1);
 	}
 }
+```
 --------------------------------------------------------------------
 Passing an object reference to the constructor (Copy Constructor) :
 -------------------------------------------------------------------
@@ -4138,6 +4223,7 @@ object.
 ---------
 Employee.java(BLC)
 ------------------
+```
 package com.ravi.passing_object_ref;
 
 public class Employee 
@@ -4206,11 +4292,13 @@ public class PassingObjectRefToConstructor
 
 	}
 }
+```
 ---------------------------------------------------------------------
 28-Sep-23
 ---------
 Program on Passing Object Reference to the Constructor :
 --------------------------------------------------------
+```
 package com.ravi.passing_object_ref_to_cons;
 
 public class Player 
@@ -4338,10 +4426,12 @@ public class CopyConstructor {
 	}
 
 }
+```
 --------------------------------------------------------------------
 Method return type as a class :
 --------------------------------
 We can take return type of the method as a class. As a return type of method we can take all primitive data type (byte, Short, int and so on) class name, interface name;
+```
 
 public class Test
 {
@@ -4351,6 +4441,7 @@ public class Test
        return 5;   
     }
 }
+```
 ---------------------------------------------------------------------
 The following program explains how to tale return type of a method as class
 
@@ -4358,6 +4449,7 @@ The following program explains how to tale return type of a method as class
 ---------
 Employee.java
 --------------
+```
 package com.ravi.class_as_a_return_type;
 
 import java.util.Date;
@@ -4434,6 +4526,7 @@ public class ClassAsAReturnValue {
 
 	}
 }
+```
 ------------------------------------------------------------------------
 29-Sep-23
 ---------
@@ -4500,6 +4593,7 @@ Program :
 --------------------
 Customer.java(BLC)
 ------------------
+```
 package com.ravi.lab_credit_card_program;
 
 public class Customer 
@@ -4609,6 +4703,7 @@ public class CreditCard {
 		
 	}
 }
+```
 -------------------------------------------------------------------------
 Lab Program :
 -------------
@@ -4657,6 +4752,7 @@ This Lab program contains 6 files :
 ------------------------------------
 Employee.java
 -------------
+```
 package com.ravi.lab_prog_tax_util;
 
 public class Employee 
@@ -4719,11 +4815,13 @@ public class Manager
 		  double grossSalary = this.basicSalary + this.HRAPer + this.DAPer+this.projectAllowance;
 		  return grossSalary;
 	  }
-}  
+} 
+``` 
 
 
 Trainer.java
 -------------
+```
 package com.ravi.lab_prog_tax_util;
 
 public class Trainer 
@@ -4877,6 +4975,7 @@ public class ClassObject {
 	}
 
 }
+```
 
 -------------------------------------------------------------------------
 instance block in java
@@ -4894,18 +4993,21 @@ Instance block will execute once per object that means whenever we create an obj
 If we have multiple instance blocks in a class then they would be executed in the same order as they were written in the class(order wise)
 
 Example :-
+```
 
 //Instance Block
 
 {
 
 }
+```
 ------------------------------------------------------------------------
 //WAP which displays instance block is executed before the Constructor
   body
 
 2 files :
 --------
+```
 package com.ravi.instance_block;
 
 public class Instance 
@@ -4985,6 +5087,7 @@ public class InstanceBlock2 {
 		new Test();
 	}
 }
+```
 ------------------------------------------------------------------------
 Some important points regarding constructor :-
 
@@ -5027,9 +5130,11 @@ How many ways we can make an object eligible for garbage Collector :
 There are 3 ways to make an Object eligible for Garbage Collector :
 ----------------------------------------------------------------
 1) Assigning a null literal to reference variable
+```
 
     Employee e1 = new Employee();
     e1 = null;
+
 
  2) Creating an object inside the method
 
@@ -5239,6 +5344,7 @@ In java, we have two types of relation between the classes.
   {
     //Car IS-A Vehicle so it is creating IS-A relation
   }
+  ```
 
 --------------------------------------------------------------------
 04-Oct-23
@@ -5276,6 +5382,7 @@ WAP in java to implement Single Level Inheritance (Only Basic)
 ---------
 Super.java
 -----------
+```
 package com.ravi.inheritance;
 
 public class Super 
@@ -5471,6 +5578,7 @@ public class HierarchicalInheritance
 	}
 
 }
+```
 -------------------------------------------------------------------------
 05-Oct-23
 ---------
@@ -5506,6 +5614,7 @@ super keyword we can use in 3 ways in java :
 
  Son.java
  --------
+ ```
  package com.ravi.super_var;
 
 public class Son extends Father
@@ -5532,6 +5641,7 @@ public class SuperVar
 		Son s1 = new Son();		
 	}
 }
+```
 ------------------------------------------------------------------------
 2) To call the method of the super class
 ---------------------------------------------
@@ -5539,6 +5649,7 @@ public class SuperVar
 -------------------------------------------------------------------------
 1 file SuperMethod.java
 ------------------------
+```
 package com.ravi.super_method;
 
 class A
@@ -5566,6 +5677,7 @@ public class SuperMethod
 		
 	}
 }
+```
 --------------------------------------------------------------------
 06-Oct-23
 ---------
@@ -5587,6 +5699,7 @@ CASE 1 :
 
 CallingNoArgsConstructor.java [Single File Approach]
 -----------------------------------------------------
+```
 package com.ravi.super_this;
 
 class A
@@ -5612,12 +5725,14 @@ public class CallingNoArgsConstructor
 		B b1 = new B();
 	}
 }
+```
 
 Note :- From the above program it is clear that, super() is added by compiler to the first line of constructor so, the control will reach to Object class first to maintain the hierarchy.
 ----------------------------------------------------------------------
 CASE 2 :-
 ----------
 super("NIT") :- To call the parameterized constructor of super class
+```
 
 package com.ravi.super_this;
 
@@ -5987,6 +6102,7 @@ class  Test extends A
 		A a1 = new A(5);
    }
 }
+```
 --------------------------------------------------------------------------
 10-Oct-23
 ----------
@@ -6025,6 +6141,7 @@ Note :- Both the classes are in different package
 
 
 Test.java [Available in package com.ravi.inheritance]
+```
 package com.ravi.inheritance;
 
 public class Test 
@@ -6047,6 +6164,7 @@ public class Access extends Test
 	}
 
 }
+```
 
 public :-
 -------
@@ -6075,6 +6193,7 @@ Eg:-  byte b = 12;
          short s = b;
 --------------------------------------------------------------------------------------------
 //program on Implicit type casting 
+```
 
 package com.ravi.implicit;
 
@@ -6111,6 +6230,7 @@ public class ImplicitEx3
 	}
 
 }
+```
 -------------------------------------------------------------------------
 
 Explicit type casting :
@@ -6128,6 +6248,7 @@ byte b = s; //not possible short is bigger, byte is smaller
 
 byte b = (byte) s; //converting short to byte type
 ---------------------------------------------------------------------------------------------
+```
 package com.ravi.explicit;
 
 public class ExplicitEx1 
@@ -6173,6 +6294,7 @@ public class ExplicitEx3 {
 	}
 
 }
+```
 --------------------------------------------------------------------------
 HAS-A relation between the classes :
 ------------------------------------------
@@ -6203,6 +6325,7 @@ Note : In this Program a trainer wants to view the profile of the Student.
 
 Student.java
 ------------
+```
 package com.ravi.association_demo;
 
 public class Student 
@@ -6303,7 +6426,9 @@ public class Main
 		
 	}
 }
---------------------------------------------------------------------------
+--
+```
+------------------------------------------------------------------------
 Composition :
 -------------
 Composition relation is a restricted form of Aggregation in which two classes (or entities) are highly dependent on each other; the composed object cannot exist without the other entity. The composition can be described as a part-of relationship.
@@ -6314,6 +6439,7 @@ Engine.java
 ------------
 package com.ravi.composition;
 //Composition(Strong reference type)
+```
 
 public class Engine 
 {
@@ -6382,6 +6508,7 @@ public class Main
 	}
 
 }
+```
 -----------------------------------------------------------------------
 11-Oct-23
 ----------
@@ -6399,6 +6526,7 @@ Example :-
 ---------
 Company.java
 -------------
+```
 package com.ravi.aggregation_demo;
 
 public class Company 
@@ -6488,6 +6616,7 @@ public class Main {
 		
 	}
 }
+```
 ---------------------------------------------------------------------
 Polymorphism :
 ------------------
