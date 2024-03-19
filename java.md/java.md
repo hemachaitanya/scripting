@@ -295,6 +295,7 @@ Note :- We are getting the output as 36 but it is not user-friendly
 How to provide user-friendly message :
 ---------------------------------------
 //Write a program in java to add two number
+```
 public class Add 
 {
 	public static void main(String[] args) 
@@ -305,8 +306,10 @@ public class Add
 		System.out.println("Sum is :"+z);
 	}
 }
+```
 --------------------------------------------------------------------
 //Add two numbers without 3rd variable
+```
 public class Addition 
 {
 	public static void main(String[] args) 
@@ -319,6 +322,7 @@ public class Addition
 		System.out.println("Sum is :"+(x+y));
 	}
 }
+```
 -------------------------------------------------------------------
 How to write our first program Eclipse IDE :
 --------------------------------------------------
@@ -338,7 +342,7 @@ The following command will create a folder having same name with package :
 
 Program :
 ---------
-
+```
 package com.nit.basic;
 
 public class Hello 
@@ -347,6 +351,7 @@ public class Hello
     {
     }
 }
+```
 
 javac  -d  .  Hello.java (Compilation style of the programs which
                            contains package statement in cmd)
@@ -360,7 +365,7 @@ By using Command Line Argument we can pass some value at runtime.
 The advantage of command line argument is "Single time compilation and number of times execution".
 ------------------------------------------------------------------
 //Write a program to pass some value at runtime using Command Line Argument
-
+```
 public class Command
 {
 	public static void main(String[] x) 
@@ -368,6 +373,7 @@ public class Command
 		System.out.println(x[0]);
 	}
 }
+```
 
 Note :- javac Command.java [Compilation]
         java Command "Virat Kohli" [Executing and passing Virat kohli at runtime]
@@ -376,6 +382,7 @@ Note :- javac Command.java [Compilation]
 05-Sep-23
 ---------
 //WAP in java to add two numbers by using command Line Argument
+```
 public class CommandAdd 
 {
 	public static void main(String x[]) 
@@ -383,6 +390,7 @@ public class CommandAdd
 		System.out.println(x[0] + x[1]);
 	}
 }
+```
 
 Note :- In the above program both the values are appended to each other and here '+' operator behaves like String concatenation operator
 ----------------------------------------------------------------------
@@ -391,6 +399,8 @@ How to convert a String value into integer :
 If we want to convert any String value into integer then java software people has provided a predefined class called Integer available in java.lang package, this class contains a predefined static method parseInt(String x) through which we can convert any String value into integer.
 This parseInt(String str) method throws an exception
 java.lang.NumberFormatException
+
+```
 
 //This Integer class is a prdefined class given by java software 
 public class Integer
@@ -402,8 +412,11 @@ public class Integer
       return integer value;
    }
 }
+```
 ---------------------------------------------------------------------
 package com.nit.basic;
+
+```
 
 public class CommandAdd 
 {
@@ -416,7 +429,7 @@ public class CommandAdd
 		  System.out.println("Sum is :"+(i+j));	
 	}
 }
-
+```
 How to execute Command line program in Eclipse IDE :
 -------------------------------------------------------------
 Right click on the Program -> Run as -> Run configuration -> Arguments -> Program Argument (Pass some value accroding to your use ) -> Click on Run
@@ -508,6 +521,7 @@ Assigned to variable, method, classes to uniquely identify them.
 We can't use keyword as an identifier.
 
 Ex:-
+```
 
 class Fan 
 {
@@ -517,6 +531,7 @@ class Fan
    {
    }
 }
+```
 
 Here Fan(Name of the class), coil (Name of the variable) and start(Name of the function) are identifiers.
 ------------------------------------------------------------------------------------
@@ -609,6 +624,7 @@ Being a user we can represent integral literal in decimal, octal, hexadecimal an
 07-Sep-23
 ----------
 //Octal literal
+```
 public class Test1
 {
 	public static void main(String[] args) 
@@ -625,8 +641,10 @@ public class Test1
 		System.out.println("Octal 011   = "+nine);
 	}
 }
+```
 ----------------------------------------------------------------------
 //Hexadecimal
+```
 public class Test2
 {
 public static void main(String[] args)
@@ -637,8 +655,10 @@ public static void main(String[] args)
 		System.out.println(j); 
 	}
 }
+```
 ----------------------------------------------------------------------
 //Binary Literal
+```
 public class Test3
 {
 public static void main(String[] args)
@@ -649,6 +669,7 @@ public static void main(String[] args)
 		System.out.println(j); //7		
 	}
 }
+```
 ---------------------------------------------------------------------
 By default every integral literal is of type int only but we can specify explicitly as long type by suffixing with l (small l) OR L (Capital L).
 
@@ -657,8 +678,10 @@ According to industry standard L is more preferable because l (small l) looks li
 There is no direct way to specify byte and short literals explicitly. If we assign any integral literal to byte variable and if the value is within the range (-128 to 127) then it is automatically treated as byte literals.
 
 If we assign integral literals to short and if the value is within the range (-32768 to 32767) then automatically it is treated as short literals.
------------------------------------------------------------------------
+-----------------------------------------------------------
+------------
 /* By default every integral literal is of type int only*/
+```
 public class Test4
 {
 public static void main(String[] args)
@@ -670,8 +693,10 @@ public static void main(String[] args)
 		System.out.println(s);
     }
 }
+```
 -----------------------------------------------------------------------
 //Assigning smaller data type value to bigger data type
+```
 public class Test5
 {
 public static void main(String[] args)
@@ -681,8 +706,10 @@ public static void main(String[] args)
 		System.out.println(s);
 	}
 }
+```
 -----------------------------------------------------------------------
 //Converting bigger type to smaller type
+```
 public class Test6
 {
 public static void main(String[] args)
@@ -692,7 +719,9 @@ public static void main(String[] args)
 		System.out.println(b);
 	}
 }
+```
 ---------------------------------------------------------------------
+```
 public class Test7
  {
  public static void main(String[] args)
@@ -708,6 +737,7 @@ public class Test7
  
   }
  } 
+ ```
 ---------------------------------------------------------------------
 08-Sep-23
 ---------
@@ -733,6 +763,7 @@ boolean				-		Boolean
 All these wrapper classes are available in java.lang package.
 ---------------------------------------------------------------------
 //Autoboxing
+```
 public class Test8 
 {
 	public static void main(String[] args) 
@@ -749,6 +780,7 @@ public class Test8
 		System.out.println(d);
 	}
 }
+```
 ---------------------------------------------------------------------
 How to know the minimum and maximum value as well as size of integral literal data types:
 ------------------------------------------------------------------------------------
@@ -808,7 +840,9 @@ public class Test10
 		System.out.println("Mobile Number is :"+mobile);
 	}
 }
+```
 --------------------------------------------------------------------
+```
 public class Test11 
 {
 	public static void main(String[] args) 
@@ -821,6 +855,7 @@ public class Test11
 ```
 -------------------------------------------------------------------
 // Converting from decimal to another number system
+```
 public class Test12 
 {
       public static void main(String[] argv) 
@@ -835,8 +870,10 @@ public class Test12
            System.out.println(Integer.toHexString(2781));
       }
 }
+```
 ---------------------------------------------------------------------
 // Converting from decimal to another number system
+```
 public class Test12 
 {
       public static void main(String[] argv) 
@@ -851,8 +888,10 @@ public class Test12
            System.out.println(Integer.toHexString(2781));
       }
 }
+```
 -------------------------------------------------------------------
 //var keyword from java 10v
+```
 public class Test13 
 {
 	public static void main(String[] args) 
@@ -862,6 +901,7 @@ public class Test13
 			System.out.println("x value is :"+x);
 	}
 }
+```
 ---------------------------------------------------------------------
 Floating point Literals :
 ---------------------------
@@ -905,6 +945,7 @@ Ex:- 23.89; //Floating Point Literal
 ---------------------------------------------------------------------
 09-Sep-23
 ---------
+```
 public class Test 
 {
 	public static void main(String[] args) 
@@ -913,7 +954,9 @@ public class Test
 		System.out.println(f);				
 	}
 }
+```
 -----------------------------------------------------------------------
+```
 public class Test1 
 {
 	public static void main(String[] args) 
@@ -926,7 +969,9 @@ public class Test1
        
 	}
 }
+```
 ---------------------------------------------------------------------
+```
 public class Test2 
 {
 	public static void main(String[] args) 
@@ -951,7 +996,9 @@ public class Test3
 		System.out.println(x+","+y+","+z);
 	}
 }
+```
 -----------------------------------------------------------------------
+```
 class Test4 
 {
 	public static void main(String[] args) 
@@ -963,7 +1010,9 @@ class Test4
 		System.out.println(x+","+y);
 	}
 }
+```
 -----------------------------------------------------------------------
+```
 public class Test5 
 {
 	public static void main(String[] args) 
@@ -991,7 +1040,10 @@ public class Test6
 		double e = 0Xdead.0; //error
 	}
 }
+```
 ---------------------------------------------------------------------
+
+```
 public class Test7 
 {
 	public static void main(String[] args) 
@@ -1006,8 +1058,10 @@ public class Test7
 	   long l = 12.78F; //error
 	}
 }
+```
 ---------------------------------------------------------------------
 //Range and size of floating point literal 
+```
 public class Test8 
 {
 	public static void main(String[] args)    
@@ -1023,6 +1077,7 @@ public class Test8
 		System.out.println(" size :"+Double.SIZE);
 	}
 } 
+```
 ----------------------------------------------------------------------
 Character Literal :
 -------------------
@@ -1060,6 +1115,7 @@ Character Literal :
 		g) \"		-> Double quotes   
 		h) \\		-> Back slace
 ---------------------------------------------------------------------
+```
 public class Test1 
 {
 	public static void main(String[] args) 
@@ -1216,6 +1272,7 @@ public class Test12
 		}
 	}
 }
+```
 ---------------------------------------------------------------------
 11-Sep-23
 ---------
@@ -1240,6 +1297,7 @@ Boolean literal :
     boolean e = "false";//here false is String literal not boolean, not possible
 
 ---------------------------------------------------------------------
+```
 public class Test1
 {
     public static void main(String[] args)
@@ -1273,6 +1331,7 @@ public class Test3
                 System.out.println(y); 
 	}
 }
+```
 ---------------------------------------------------------------------
 String Literal :-    
 ----------------
@@ -1296,6 +1355,7 @@ In java String can be created by using 3 ways :-
 
 ---------------------------------------------------------------------
 //Three Ways to create the String Object
+```
 public class StringTest1 
 {
 	public static void main(String[] args) 
@@ -1341,6 +1401,7 @@ class StringTest3
 		
 	}
 }
+```
 ----------------------------------------------------------------------
 Punctuators :
 ---------------
@@ -1386,6 +1447,7 @@ Ex:-   +, - , *, / and % (Modula Or Modulus Operator)
 ----------------------------------------------------------------------
 //Arithmetic Operator
 // Addition operator to join two Strings working as String concatenation optr
+```
 public class Test1 
 {
 	public static void main(String[] args) 
@@ -1397,6 +1459,7 @@ public class Test1
 		
 	}
 }
+```
 ----------------------------------------------------------------------
 How to read the value from the user/keyboard (Accepting the data from client)
 -------------------------------------------------------------------------------------------
