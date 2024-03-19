@@ -275,6 +275,7 @@ In System.out.println(), System is a predefined class available in java.lang pac
 
 In System.out, .(dot) is a member access operator. It is called as period. It is used to access the member of the class.
 -------------------------------------------------------------------
+```
 //Write a program in java to add two number
 public class Add 
 {
@@ -286,6 +287,7 @@ public class Add
 		System.out.println(z);
 	}
 }
+```
 
 Note :- We are getting the output as 36 but it is not user-friendly
         message 
