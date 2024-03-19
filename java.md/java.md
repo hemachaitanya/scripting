@@ -765,6 +765,7 @@ Byte.SIZE = 8 (in bits format)
 Here MIN_VALUE, MAX_VALUE and SIZE these are static and final variables available in these classes(Byte, Short, Integer and Long).
 ---------------------------------------------------------------------
  //Program to find out the range and size of Integeral Data type
+ ```
 public class Test9 
 {
 	public static void main(String[] args) 
@@ -791,12 +792,13 @@ public class Test9
 		
 	}
 }
+```
 ---------------------------------------------------------------------
 Underscore Facility in integeral literal :
 --------------------------------------------
 From java 7v onwards, now we can provide _ symbol while writing the 
 integral literal just to enhance the readability of the number.
-
+```
 //We can provide _ in integral literal
 public class Test10 
 {
@@ -816,6 +818,7 @@ public class Test11
 		System.out.println(b);
 	}
 }
+```
 -------------------------------------------------------------------
 // Converting from decimal to another number system
 public class Test12 
